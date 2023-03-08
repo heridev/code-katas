@@ -9,3 +9,6 @@ puts 'hello'.gsub(/[aeiou]/) { |match| match.upcase }
 # searching spaces
 # puts 'hello hola hola     yes'.gsub(/\S+/) { |_match| '*' }
 puts 'hello hola hola     yes'.gsub(/\s./, '<space>')
+
+# Reversing words but without changing spaces in the middle
+'eW tnaw ot egnahc eht redro tuohtiw gnignahc secaps'.gsub(/\S+/, &:reverse)
