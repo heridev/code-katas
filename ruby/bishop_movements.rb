@@ -11,10 +11,6 @@ cols = 8
 initial_color = :white
 @chess = []
 
-def even?(value)
-  value.even?
-end
-
 def get_opposite_color(current_color)
   current_color == :black ? :white : :black
 end
