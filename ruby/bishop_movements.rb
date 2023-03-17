@@ -17,14 +17,14 @@ end
 
 def generate_zebra_colors(size_of_array, initial_color)
   @array_values = []
-  size_of_array.times do |_index|
+  size_of_array.times do
     @array_values << initial_color
     initial_color = get_opposite_color(initial_color)
   end
   @array_values
 end
 
-rows.times do |_row|
+rows.times do
   result = generate_zebra_colors(rows, initial_color)
   @chess << result
   initial_color = get_opposite_color(initial_color)
