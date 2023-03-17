@@ -25,7 +25,7 @@ def generate_zebra_colors(size_of_array, initial_color)
 end
 
 rows.times do
-  result = generate_zebra_colors(rows, initial_color)
+  result = generate_zebra_colors(cols, initial_color)
   @chess << result
   initial_color = get_opposite_color(initial_color)
 end
