@@ -165,7 +165,7 @@ def calculate_second_diagonal(coordinates)
   @final_coordinates
 end
 
-# How to see in action...
+# How to see it in action...
 initial_coordinates = { row: 2, col: 5 }
 final_coordinates = { row: 5, col: 2 }
 puts how_many_movements_from_to(initial_coordinates, final_coordinates)
